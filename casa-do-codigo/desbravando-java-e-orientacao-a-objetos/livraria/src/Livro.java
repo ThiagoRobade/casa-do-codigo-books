@@ -32,13 +32,16 @@ public class Livro {
         System.out.println("---\n");
 
         }
-        public boolean aplicaDescontoDe(double porcentagem) {
-            if (porcentagem > 0.3) {
-                return false;
-            }
-            this.valor -= this.valor * porcentagem;
-            return true;
 
+
+    public boolean aplicaDescontoDe(double porcentagem) {
+       if (porcentagem > 0.15) {
+           return false;
+       }
+
+       double desconto = this.getValor() * porcentagem;
+       this.setValor(this.getValor() - desconto);
+       return true;
     }
 
     // Getters And Setters
