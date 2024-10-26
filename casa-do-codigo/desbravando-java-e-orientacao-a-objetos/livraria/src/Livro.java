@@ -1,4 +1,8 @@
-public class Livro {
+/**
+ * Representa um Livro com informações básicas como nome, descrição, valor,
+ * ISBN, autor e se é impresso.
+ */
+public abstract class Livro {
     private String nome;
     private String descricao;
     private double valor;
@@ -6,17 +10,33 @@ public class Livro {
     private Autor autor;
     private boolean impresso;
 
+
+    /**
+     * Construtor que inicializa o livro com um autor e valores padrão
+     * para ISBN e indicação de que o livro é impresso.
+     *
+     * @param autor Autor do livro
+     */
    public Livro(Autor autor) {
        this.autor = autor;
        this.isbn = "000-000-00000-00-0";
        this.impresso = true;
    }
 
+    /**
+     * Verifica se o livro possui um autor.
+     *
+     * @return true se o livro possui um autor, false caso contrário
+     */
    boolean temAutor() {
        return this.autor != null;
    }
 
 
+    /**
+     * Exibe os detalhes do livro no console, incluindo nome, descrição, valor e ISBN.
+     * Caso tenha um autor, também exibe seus detalhes.
+     */
     void mostarDetalhes() {
         System.out.println("Mostrando detalhes do livro");
         System.out.println("Nome: " + nome);
@@ -33,18 +53,18 @@ public class Livro {
 
         }
 
-
+    /**
+     * Aplica um desconto ao valor do livro. Este método deve ser sobrescrito
+     * pelas classes filhas para definir uma lógica de desconto.
+     *
+     * @param porcentagem Percentual de desconto a ser aplicado
+     * @return true se o desconto foi aplicado com sucesso, false caso contrário
+     */
     public boolean aplicaDescontoDe(double porcentagem) {
-       if (porcentagem > 0.15) {
-           return false;
-       }
-
-       double desconto = this.getValor() * porcentagem;
-       this.setValor(this.getValor() - desconto);
-       return true;
+      return false;
     }
 
-    // Getters And Setters
+    // Getters e Setters
 
     public double getValor() {
         return valor;
@@ -85,4 +105,5 @@ public class Livro {
     public void setAutor(Autor autor) {
         this.autor = autor;
     }
+
 }
