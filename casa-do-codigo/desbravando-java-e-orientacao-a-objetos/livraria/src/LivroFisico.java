@@ -1,7 +1,7 @@
 /**
  * Representa um Livro Físico, que herda as propriedades da classe Livro.
  */
-public class LivroFisico extends Livro {
+public class LivroFisico extends Livro implements Promocional {
 
     /**
      * Construtor que inicializa o livro físico com o autor.

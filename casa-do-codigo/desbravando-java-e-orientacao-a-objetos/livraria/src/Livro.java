@@ -1,8 +1,9 @@
 /**
  * Representa um Livro com informações básicas como nome, descrição, valor,
- * ISBN, autor e se é impresso.
+ * ISBN, autor e se é impresso. Implementa a interface Produto, indicando que
+ * um Livro é um tipo de produto com métodos específicos definidos pela interface.
  */
-public abstract class Livro {
+public abstract class Livro implements Produto, Promocional {
     private String nome;
     private String descricao;
     private double valor;

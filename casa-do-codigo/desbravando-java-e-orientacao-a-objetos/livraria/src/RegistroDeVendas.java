@@ -9,6 +9,7 @@ public class RegistroDeVendas {
         fisico.setNome("Test-Driven Development");
         fisico.setValor(59.90);
 
+
         Ebook ebook = new Ebook(autor);
         ebook.setNome("Test-Driven Development");
         ebook.setValor(29.90);
