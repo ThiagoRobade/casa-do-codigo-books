@@ -1,5 +1,7 @@
+package br.com.casadocodigo.livraria;
+
 /**
- * Representa uma Editora, responsável pela publicação de livros e revistas.
+ * Representa uma br.com.casadocodigo.livraria.Editora, responsável pela publicação de livros e revistas.
  * Contém informações básicas como nome fantasia, razão social e CNPJ.
  */
 public class Editora {

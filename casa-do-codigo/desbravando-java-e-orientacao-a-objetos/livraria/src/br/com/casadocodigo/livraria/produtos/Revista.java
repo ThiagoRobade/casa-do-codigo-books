@@ -1,6 +1,10 @@
+package br.com.casadocodigo.livraria.produtos;
+
+import br.com.casadocodigo.livraria.Editora;
+
 /**
- * Representa uma Revista com informações básicas como nome, descrição, valor
- * e a editora responsável. Implementa a interface Promocional, permitindo que
+ * Representa uma br.com.casadocodigo.livraria.produtos.Revista com informações básicas como nome, descrição, valor
+ * e a editora responsável. Implementa a interface br.com.casadocodigo.livraria.produtos.Promocional, permitindo que
  * descontos sejam aplicados ao valor da revista.
  */
 public class Revista implements Produto, Promocional {

@@ -1,3 +1,5 @@
+package br.com.casadocodigo.livraria.produtos;
+
 /**
  * Interface funcional que define a operação de aplicação de desconto.
  * Marcada com @FunctionalInterface para indicar que possui um único método abstrato.

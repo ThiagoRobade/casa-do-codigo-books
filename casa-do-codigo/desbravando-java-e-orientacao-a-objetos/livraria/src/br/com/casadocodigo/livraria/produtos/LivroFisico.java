@@ -1,12 +1,16 @@
+package br.com.casadocodigo.livraria.produtos;
+
+import br.com.casadocodigo.livraria.Autor;
+
 /**
- * Representa um Livro Físico, que herda as propriedades da classe Livro.
+ * Representa um br.com.casadocodigo.livraria.produtos.Livro Físico, que herda as propriedades da classe br.com.casadocodigo.livraria.produtos.Livro.
  */
 public class LivroFisico extends Livro implements Promocional {
 
     /**
      * Construtor que inicializa o livro físico com o autor.
      *
-     * @param autor Autor do livro
+     * @param autor br.com.casadocodigo.livraria.Autor do livro
      */
     public LivroFisico(Autor autor) {
         super(autor);

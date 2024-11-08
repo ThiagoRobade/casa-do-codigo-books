@@ -1,3 +1,7 @@
+package br.com.casadocodigo.livraria.teste;
+
+import br.com.casadocodigo.livraria.produtos.Produto;
+
 public class CarrinhoDeCompras {
 
     private double total;
@@ -8,7 +12,7 @@ public class CarrinhoDeCompras {
     }
 
     /*
-    public void adiciona(Livro livro) {
+    public void adiciona(br.com.casadocodigo.livraria.produtos.Livro livro) {
         System.out.println("Adicionando: " + livro);
         livro.aplicaDescontoDe(0.16);
         total += livro.getValor();
