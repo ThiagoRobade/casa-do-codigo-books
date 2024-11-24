@@ -5,7 +5,7 @@ public class Autor {
     private String email;
     private String cpf;
 
-    void mostarDetalhes() {
+    public void mostarDetalhes() {
         System.out.println("Mostrando detalhes do autor");
         System.out.println("Nome: " + nome);
         System.out.println("Email: " + email);

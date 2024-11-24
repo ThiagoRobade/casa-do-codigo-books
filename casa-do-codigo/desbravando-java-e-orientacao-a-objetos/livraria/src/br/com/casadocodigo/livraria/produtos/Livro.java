@@ -1,12 +1,9 @@
 package br.com.casadocodigo.livraria.produtos;
 
 import br.com.casadocodigo.livraria.Autor;
+import br.com.casadocodigo.livraria.AutorNuloException;
 
-/**
- * Representa um br.com.casadocodigo.livraria.produtos.Livro com informações básicas como nome, descrição, valor,
- * ISBN, autor e se é impresso. Implementa a interface br.com.casadocodigo.livraria.produtos.Produto, indicando que
- * um br.com.casadocodigo.livraria.produtos.Livro é um tipo de produto com métodos específicos definidos pela interface.
- */
+
 public abstract class Livro implements Produto, Promocional {
     private String nome;
     private String descricao;
@@ -15,14 +12,13 @@ public abstract class Livro implements Produto, Promocional {
     private Autor autor;
     private boolean impresso;
 
-
-    /**
-     * Construtor que inicializa o livro com um autor e valores padrão
-     * para ISBN e indicação de que o livro é impresso.
-     *
-     * @param autor br.com.casadocodigo.livraria.Autor do livro
-     */
    public Livro(Autor autor) {
+
+       if (autor == null) {
+           throw new AutorNuloException(
+                   "O autor do livro não pode ser nulo"
+           );
+       }
        this.autor = autor;
        this.isbn = "000-000-00000-00-0";
        this.impresso = true;
